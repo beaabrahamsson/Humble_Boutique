@@ -1,0 +1,933 @@
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+}
+
+header img {
+  width: 20%;
+}
+
+.border {
+  background-color: black;
+  color: white;
+  font-size: small;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.border p {
+  margin: auto;
+  margin-left: 10px;
+}
+
+.logo {
+  font-size: x-large;
+  margin-left: 20px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav a {
+  font-size: large;
+  padding: 14px 16px;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  height: 100%;
+}
+
+.topnav a.active {
+  background-color: #ccc;
+  color: white;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.topnav .search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.logo{
+  flex-grow: 2;
+}
+
+.nav {
+  flex-grow: 2;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+.shopping-cart {
+  margin-right: 10px;
+}
+
+.shopping-cart button {
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #ddd; /* Green */
+  border: none;
+  color: black;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.shopping-cart button:hover {
+  background: #ccc;
+}
+
+main a{
+  text-decoration: none;
+  color: black;
+}
+
+main a:hover {
+  color: #717171;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container img{
+  width: 100%;
+  height: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#presentation p{
+  text-align: center;
+  font-size: large;
+  margin: 30px;
+}
+
+#presentation h1 {
+  margin-left: 130px;
+  margin-top: 50px;
+}
+
+#topPicks {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.card img {
+  border: #ddd solid 1px;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+#products1 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#products2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+#footerlogo {
+  flex-grow: 2;
+}
+
+#footerlogo p {
+  margin-left: 30px;
+  margin-top: 0px;
+}
+
+footer img {
+  padding: 20px;
+  height: 100px;
+  width: auto;
+}
+
+footer h2 {
+  margin-bottom: 0px;
+}
+
+#about ul {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+#about a {
+  color: white;
+}
+
+#about {
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+#contact {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#contact p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.productPage {
+  display: flex;
+}
+
+.productInfo button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+}
+
+.productInfo button:hover {
+  opacity: 0.7;
+}
+
+#shipping {
+  font-weight: bold;
+}
+
+#productImg {
+  margin: 0px;
+  margin-top: 20px;
+  max-width: 400px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: #ccc solid 1px;
+  padding: 20px;
+  margin: 20px
+}
+
+.productInfo {
+  margin: 40px;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+  margin: auto;
+  width: 400px;
+  height: 500px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#myModal, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#basketPopup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.popup {
+  cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 350px;
+  background-color: #555;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  padding-bottom: 20px;
+  margin: 10px;
+}
+
+.popuptext ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.popuptext h2 {
+  margin-left: 30px;
+}
+
+.popuptext a {
+  color: white;
+  margin-left: 30px;
+  font-size: large;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+.popup .hide {
+  visibility: hidden;
+  -webkit-animation: fadeO 1s;
+  animation: fadeIn 1s;
+}
+
+#basketLinks {
+  display: flex;
+  align-items: baseline;
+}
+
+#basketLinks p {
+  text-decoration: underline;
+  margin-left: 20px;
+  font-size: large;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+#heading {
+  margin-left: 80px;
+}
+
+table {
+  margin: 30px;
+}
+
+td {
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+thead {
+  font-weight: bold;
+}
+
+.emptyBasket button {
+  width: 15%;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  padding-left: 80px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#discount {
+  width: 60%;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.btn {
+  background-color: #ccc;
+  color: black;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+#aboutPage {
+  width: 50%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.video {
+  position: relative;
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+
+  /*Media querie for screens smaller than 768px (phone)*/
+  @media only screen and (max-width: 768px) {
+
+    .logo img {
+      height: 50px;
+      width: auto;
+      margin-left: 10px;
+      margin-top: 8px;
+      margin-bottom: 0px;
+    }
+  
+    .logo {
+      margin-left: 0px;
+      order: 1;
+    }
+
+    .hamburgerMenu {
+      display: block;
+      order: 3;
+    }
+
+    .hamburgerMenu .icon {
+      padding-top: 6px;
+      padding-bottom: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 8px;
+      margin-right: 10px;
+    }
+
+    .fa-bars {
+      font-size: 35px;
+      padding-bottom: 0px;
+    }
+
+    .hamburgerMenu a:hover {
+      background-color: #ccc;
+    }
+
+    #myLinks {
+      position: absolute;
+      display: none;
+      background-color: #ddd;
+      margin-top: 70px;
+      padding-bottom: 20px;
+      right: 0em;
+      width: 100%;
+    }
+
+    #myLinks a {
+      color: black;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+
+    .shopping-cart {
+      order: 2;
+    }
+  
+    .shopping-cart button{
+      font-size: 0;
+      background-color: #e9e9e9;
+      padding: 6px 10px;
+      margin-top: 8px;
+    }
+  
+    .fa-shopping-cart {
+      font-size: 35px;
+    }
+
+    .search-container {
+      order: 4;
+      display: flex;
+      margin-bottom: 10px;
+      margin-left: 10px;
+  }
+
+  .topnav .search-container button {
+    background: #e9e9e9;
+    font-size: 20px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+  
+  .nav {
+    display: none;
+  }
+
+  #presentation {
+    width: 100%;
+  }
+
+  #presentation p{
+    text-align: center;
+    font-size: medium;
+    margin: 30px;
+  }
+  
+  #presentation h1 {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  #topPicks {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  #products1 {
+    flex-wrap: wrap;
+  }
+
+  #products2 {
+    flex-wrap: wrap;
+  }
+
+  .productPage {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  .video {
+    margin: 20px;
+  }
+
+  #heading {
+    margin-left:30px;
+  }
+
+  table {
+    margin-left: 20px;
+  }
+
+  thead {
+    padding: 0px
+  }
+
+  td {
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+  }
+
+  .form {
+    padding-left: 30px;
+  }
+
+  .emptyBasket button {
+    margin-left: 30px;
+    width: 40%;
+  }
+
+  #aboutPage {
+    width: 80%;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    display: flex;
+  }
+  
+  #footerlogo {
+    display: none;
+  }
+  
+  footer #about {
+    margin-left: 20px;
+  }
+}
+
+  /*Media querie for screens bigger than 768px but smaller than 992px (tablet)*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+  .logo img {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+  }
+
+  .logo {
+    margin-left: 0px;
+    order: 1;
+  }
+
+  .hamburgerMenu {
+    display: block;
+    order: 3;
+  }
+
+  .hamburgerMenu .icon {
+    padding-top: 6px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 8px;
+    margin-right: 10px;
+  }
+
+  .fa-bars {
+    font-size: 35px;
+    padding-bottom: 0px;
+  }
+
+  .hamburgerMenu a:hover {
+    background-color: #ccc;
+  }
+
+  #myLinks {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: #ddd;
+    margin-top: 65px;
+    padding-bottom: 0px;
+    right: 0em;
+    width: 100%;
+  }
+
+  #myLinks a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .shopping-cart {
+    order: 2;
+  }
+
+  .shopping-cart button{
+    font-size: 0;
+    background-color: #e9e9e9;
+    padding: 6px 10px;
+    margin-top: 8px;
+  }
+
+  .fa-shopping-cart {
+    font-size: 35px;
+  }
+
+  .search-container {
+    order: 4;
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .topnav .search-container button {
+    background: #e9e9e9;
+    font-size: 20px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+
+  .nav {
+    display: none;
+  }
+
+  #topPicks {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  #presentation h1 {
+    text-align: center;
+    margin: 0px;
+  }
+
+  .productPage {
+    flex-wrap: wrap;
+  }
+
+  .video {
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  #products1 {
+    flex-wrap: wrap;
+  }
+
+  #products2 {
+    flex-wrap: wrap;
+  }
+
+  #aboutPage {
+    width: 80%;
+  }
+
+  .emptyBasket button {
+    width: 20%;
+  }
+    
+}
